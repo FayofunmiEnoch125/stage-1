@@ -3,6 +3,7 @@ import "./App.css";
 import { RiMoreLine } from "react-icons/ri";
 import { RiShareForwardLine } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
+import { BsSlack } from "react-icons/bs";
 import AVTR1 from "./image/avatar1.jpg";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <img src={AVTR1} alt="Akingbade Fayofunmi" />
         </div>
 
-        <p> Akingbade Fayofunmi </p>
+        <p> fayotheVillain </p>
         <p id="slack"> fayotheVillain </p>
       </section>
       <section className="link">
@@ -72,6 +73,27 @@ function App() {
             Design Books
           </a>
         </button>
+
+        <br></br>
+        <p>
+          <a
+            id="icon"
+            href="https://github.com/FayofunmiEnoch125"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
+          </a>
+
+          <a
+            id="icon"
+            href="https://mail.zuri.team/l/1sw892IMOS9B69KON7AsFDQw/Tf7fWUnd763Xz1DsvpVMzLLQ/YUHM7P7OdX5hgAPlCp0Rsg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsSlack />
+          </a>
+        </p>
       </section>
     </>
   );
