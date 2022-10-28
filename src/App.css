@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#profile__img {
+width: 130px;
+height: 130px;
+border-radius: 50%;
+overflow: hidden;
+cursor: pointer;
+margin: 0 auto 1rem;
+
 }
+
+#profile__img:hover {
+  border: 0.4rem solid #808080;
+  transition: all 0.2s ease-in-out;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p{
+  cursor: default;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#slack {
+  display: none;
+}
+
+.share {
+  float: right;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1070px) {
+ 
+
+  .share {
+    display: none;
+  }
+  }
+
+
+  @media screen and (min-width: 1070px) {
+    .more {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+   
+  
+    .more {
+      float: right;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    }
+
+.link {
+  margin-top: 2.5rem;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+}
+
+
+button {
+  width: 1000px;
+  height: 3.5rem;
+  margin: 1rem;
+  border-color: transparent;
+  display: block;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #F0F0F0;
+}
+
+
+@media screen and (max-width: 1070px) {
+ 
+  button {
+    width: 500px;
+    transition: all 0.3s ease-in-out;
+    }
+  }
+
+
