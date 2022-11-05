@@ -3,14 +3,14 @@ import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
-  const [firstName, setfirstName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDeafault();
+    e.preventDefault();
     if (
       firstName.length == 0 ||
       lastName.length == 0 ||
@@ -19,7 +19,6 @@ const Contact = () => {
     ) {
       setError(true);
     }
-    console.log(firstName, lastName, email, message);
   };
 
   return (
@@ -38,9 +37,9 @@ const Contact = () => {
               name="first_name"
               type="text"
               placeholder="Enter your first name"
-              onChange={(e) => setfirstName(e.target.value)}
+              onChange={(e) => setFirstName(e.target.value)}
             />
-            {error ? (
+            {error && firstName.length <= 0 ? (
               <span className="error__text">Please enter your first name</span>
             ) : (
               ""
@@ -55,7 +54,7 @@ const Contact = () => {
               placeholder="Enter your last name"
               onChange={(e) => setLastName(e.target.value)}
             />
-            {error ? (
+            {error && lastName.length <= 0 ? (
               <span className="error__text">Please enter your last name</span>
             ) : (
               ""
@@ -70,7 +69,7 @@ const Contact = () => {
               placeholder="yourname@email.com"
               onChange={(e) => setEmail(e.target.value)}
             />
-            {error ? (
+            {error && email.length <= 0 ? (
               <span className="error__text">An email is required</span>
             ) : (
               ""
@@ -82,11 +81,11 @@ const Contact = () => {
               id="message"
               name="message"
               placeholder="Send me a message and i'll reply you as soon as possible..."
-              className="textarea__error"
+              className={error ? "textarea__error" : ""}
               onChange={(e) => setMessage(e.target.value)}
             />
-            {error ? (
-              <span className="error__text">Please enter a message!</span>
+            {error && message.length <= 0 ? (
+              <span className="error__text">Please enter a message</span>
             ) : (
               ""
             )}
@@ -98,9 +97,7 @@ const Contact = () => {
             </label>
             <input type="checkbox" name="isAgree" id="checkbox" />
           </div>
-          <button id="btn__submit" type="submit">
-            Send Message
-          </button>
+          <button id="btn__submit">Send Message</button>
         </form>
       </section>
     </section>
