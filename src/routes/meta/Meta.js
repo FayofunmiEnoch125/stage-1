@@ -35,14 +35,14 @@ function Meta() {
         </div>
 
         <div className="right">
-          <img src={HERO} alt="Hero" loading="lazy" />
+          <img src={HERO} alt="Hero" />
         </div>
       </section>
 
       <section className="meta__tokens">
-        <img src={MB_token} alt="MB token" loading="lazy" />
-        <img src={Metamask} alt="Metamask" loading="lazy" />
-        <img src={Opensea} alt="Opensea" loading="lazy" />
+        <img src={MB_token} alt="MB token" />
+        <img src={Metamask} alt="Metamask" />
+        <img src={Opensea} alt="Opensea" />
       </section>
 
       <section className="meta__inspiration">
@@ -62,7 +62,7 @@ function Meta() {
                   <span>{duration}</span>
                 </div>
 
-                <img src={stars} alt="Five Stars" loading="lazy" />
+                <img src={stars} alt="Five Stars" />
               </article>
             );
           })}
@@ -84,7 +84,7 @@ function Meta() {
           </div>
 
           <div className="img__wrapper">
-            <img src={section} alt="Info Section" loading="lazy" />
+            <img src={section} alt="Info Section" />
           </div>
         </div>
       </section>
