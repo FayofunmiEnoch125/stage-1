@@ -87,6 +87,7 @@ input:focus{
 
 .sub__heading {
     color: #475467;
+    text-align: justify;
     font-size: 1.05rem;
     font-weight: 400;
 }

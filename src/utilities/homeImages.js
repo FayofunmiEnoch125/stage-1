@@ -1,0 +1,58 @@
+export const homeImages = [
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426485/1_ioexz5.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426563/2_hcgsxz.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426587/3_uqagtr.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426575/4_qkraby.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426567/5_ajrbia.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426575/6_qbsn0r.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426572/7_hlmuez.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+  {
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668426573/8_fy45m1.svg",
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    duration: "available for 2weeks stay",
+  },
+];

@@ -12,10 +12,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      firstName.length == 0 ||
-      lastName.length == 0 ||
-      email.length == 0 ||
-      message.length == 0
+      firstName.length === 0 ||
+      lastName.length === 0 ||
+      email.length === 0 ||
+      message.length === 0
     ) {
       setError(true);
     }
