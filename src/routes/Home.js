@@ -18,7 +18,7 @@ const Home = () => {
           <RiMoreLine />
         </div>
 
-        <div id="profile__img">
+        <div id="profile__img" className="Avatar__img">
           <img src={AVTR1} alt="Akingbade Fayofunmi" />
         </div>
 

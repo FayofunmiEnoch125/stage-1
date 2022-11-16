@@ -40,7 +40,7 @@ function Places() {
                 const { id, name, price, distance, duration } = item;
                 return (
                   <article key={id}>
-                    <img src={`${id}`} alt={name} loading="lazy" />
+                    <img src={`${id}`} alt={name} />
                     <div className="top">
                       <span>{name}</span>
                       <span>{price}</span>
@@ -50,7 +50,7 @@ function Places() {
                       <span>{duration}</span>
                     </div>
 
-                    <img src={stars} alt="Five Stars" loading="lazy" />
+                    <img src={stars} alt="Five Stars" />
                   </article>
                 );
               })
@@ -60,7 +60,7 @@ function Places() {
                   const { id, name, price, distance, duration } = item;
                   return (
                     <article key={id}>
-                      <img src={`${id}`} alt={name} loading="lazy" />
+                      <img src={`${id}`} alt={name} />
                       <div className="top">
                         <span>{name}</span>
                         <span>{price}</span>
@@ -70,7 +70,7 @@ function Places() {
                         <span>{duration}</span>
                       </div>
 
-                      <img src={stars} alt="Five Stars" loading="lazy" />
+                      <img src={stars} alt="Five Stars" />
                     </article>
                   );
                 })}

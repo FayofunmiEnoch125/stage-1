@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import LOGO_2 from "../../image/logo-2.svg";
 import Facebook from "../../image/facebook.svg";
 import Instagram from "../../image/instagram.svg";
@@ -15,17 +16,17 @@ function Footer() {
           <ul className="social__links">
             <li>
               <a href="/">
-                <img src={Facebook} alt="Facebook Logo" loading="lazy" />
+                <img src={Facebook} alt="Facebook Logo" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img src={Instagram} alt="instagram Logo" loading="lazy" />
+                <img src={Instagram} alt="instagram Logo" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img src={Twitter.svg} alt="twitter Logo" loading="lazy" />
+                <img src={Twitter} alt="twitter Logo" />
               </a>
             </li>
           </ul>

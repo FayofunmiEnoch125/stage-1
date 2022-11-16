@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Header.css";
 import Modal from "./Modal";
 import Navbar from "./Navbar";
 import LOGO from "../../image/logo-1_lui7b2.svg";
@@ -9,7 +10,9 @@ function Header() {
   return (
     <header className="meta__header">
       <div className="logo">
-        <img src={LOGO} alt="Logo 1" width={180} loading="lazy" />
+        <div>
+          <img src={LOGO} alt="Logo 1" />
+        </div>
       </div>
 
       <nav className="right">
@@ -18,7 +21,7 @@ function Header() {
             <a href="/meta">Home</a>
           </li>
           <li>
-            <a href="/place">Place to stay</a>
+            <a href="/meta/place">Place to stay</a>
           </li>
           <li>
             <a href="/">NFTs</a>
@@ -33,9 +36,9 @@ function Header() {
         </span>
       </nav>
 
-      <button className="menu__button" onClick={() => setIsNavShow(!isNavShow)}>
+      <span className="menu__button" onClick={() => setIsNavShow(!isNavShow)}>
         Menu
-      </button>
+      </span>
 
       {isNavShow && (
         <Navbar

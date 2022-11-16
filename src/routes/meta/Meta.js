@@ -30,7 +30,7 @@ function Meta() {
 
           <form>
             <input type="email" placeholder="Search for location" />
-            <button>Search</button>
+            <button className="searchbox">Search</button>
           </form>
         </div>
 
@@ -52,7 +52,7 @@ function Meta() {
             const { id, name, price, distance, duration } = item;
             return (
               <article key={id}>
-                <img src={`${id}`} alt={name} loading="lazy" />
+                <img src={`${id}`} alt={name} />
                 <div className="top">
                   <span>{name}</span>
                   <span>{price}</span>

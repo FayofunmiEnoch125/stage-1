@@ -1,0 +1,24 @@
+.logo__column {
+    align-content: flex-start;
+}
+
+@media only screen and (min-width: 1024px){
+   .social__links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+}
+.social__links {
+    justify-content: space-between;
+    width: 118px;
+    }
+
+
+.copyright {
+    color: #f7f7f7;
+    display: flex;
+    font-size: 15px;
+    width: 15px;
+    justify-content: space-between;
+    }
